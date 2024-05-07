@@ -34,7 +34,8 @@ const firestore = firebase.firestore();//getFirestore(app);
 const servers = {
   iceServers: [
     {
-      urls: ['stun:stun1.l.google.com:19302','stun:stun2.l.google.com:19302']
+      urls: ['turn:192.168.29.232:4895?transport=tcp' ]//'stun:stun1.l.google.com:19302','stun:stun2.l.google.com:19302'],
+      ,"username":"user", "credential":"root"
     }
   ],
   iceCandidatePoolSize: 10
